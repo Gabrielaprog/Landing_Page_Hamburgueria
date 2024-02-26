@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lily+Script+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Playfair Display' ,'Serif';
+    
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/* Todo conteúdo da barra de navegação*/
+
+.conteudo {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2cac13; 
+    position: fixed; 
+    padding-left: 30rem;
+    
+
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Titulo*/
+
+.logo h3 {
+    color: #462c05;
+    font-size: 2.1rem;
+    padding-left: 10px;  /* colocou para esquerda o icone do titulo*/
+    font-family: 'Lily Script One', 'sans serif';
+}
+
+
+
+/* ajustando todo o menu*/
+.conteudo .menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+
+}
+
+/* ajustando cada uma das list*/
+
+.conteudo .menu li a {
+    padding: 3rem 1rem 2rem 1rem;
+    color:#1b1101;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: all 200ms ease-in; 
+
+}
+
+/* criando efeito hover*/
+.conteudo .menu li a:hover {
+    text-decoration-line:underline;
+    color: white
+    
+    
+
+}
+
+.logo i {
+    
+    font-size: large;
+}
+
+/* primeira seção*/
+
+.section-1 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #292826;
+    margin-right: 10%;
+    text-align: center;
+    
+}
+
+.section-1 .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%; /* ajustando conteudo da home para cima*/
+    margin-top: 3%; /*colocando a imagem para baixo*/
+    
+}   
+
+
+
+.section-1 h1 {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    
+
+}
+
+.section-1 h2 {
+    color: rgba(210, 240, 192, 0.959)
+}
+
+/* ajustando tamenho de imagem*/
+
+.section-1 img {
+    width: 30%;
+    background-position: center;
+    top: 2%;
+    margin-top: -3%
+
+}
+
+
+/* ajustando o botão*/
+
+.botao .button {
+    width: 230px;
+    height:40px;
+    cursor:pointer;
+    text-transform: uppercase;
+    background-color: #2cac13;
+    border-radius: 50px;
+    color: white
+    
+    
+    
+}
+
+/* criando efeito hover para o botão*/
+
+.botao .button:hover {
+    background-color: #75736ea1;
+}
+/*------------------------------------------------------------*/
+
+/* Segunda seção*/
+
+.section-2-sobre {
+    background-image: linear-gradient(rgba(61, 58, 58, 0.8),rgba(29,29,29,0.8)),url(./hamburguer-caseiro-topo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: linear;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    padding-bottom: 5rem; /* espaçamento dos itens*/
+    color: white;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+
+}
+
+.conteudo-sobre {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.conteudo-sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 12%; /* colocando o titulo 'sobre' mais para baixo*/
+}
+
+.conteudo-sobre p {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 700px;
+}
+
+/* ----------------------------------------------------------------*/
+
+/* Terceira seção*/
+
+.section-3-cardapio {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #292826;
+
+    
+
+}
+
+.section-3-cardapio h2 {
+    font-size: 2rem;
+    padding: 4rem;
+    color: white
+    
+
+}
+
+.burguers-cardapio {
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /*repeat(auto-fit, minmax(250px, 3fr));*/
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+/* ajustando container com as informações*/
+
+.burguers-cardapio .info {
+    background-color: white;
+    border: none;
+    display: flex;
+    /*border-radius: 10px;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.burguers-cardapio .info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: #2cac13
+    
+}
+
+.burguers-cardapio .info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.burguers-cardapio div {
+    box-shadow: 0px 0px 4px 1px;
+    background-color: rgb(247, 242, 242);
+}
+
+.burguers-cardapio button {
+    width: 230px;
+    height:40px;
+    cursor:pointer;
+    background-color: #8d5502;
+    border-radius: 20px;
+    color: white
+    
+}
+
+.burguers-cardapio button:hover {
+    background-color: #75736ea1;
+}
+
+
+/* ajustando as imagens*/
+
+.burguers-cardapio img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+}
+
+.burguers-cardapio img:hover {
+    transform: scale(1.1);
+}
+
+/* rodapé */
+
+.contato {
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111110;
+    text-align: center;
+}
+.contato h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 3rem;
+    color: white
+    
+}
+
+.secao {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.secao svg {
+    cursor: pointer;
+    color: white
+    
+}
+
+.contato-2  {
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 230, 230);
+    text-align: center;
+
+}
+
+@media (max-width: 1200px) {
+    .main {
+        display: block;
+    }
+    .conteudo-sobre {
+        align-items: center;
+    }
+
+    
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+    .conteudo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px, 40px;
+    }
+
+    .burguers-cardapio {
+        grid-template-columns: repeat(2,minmax(50px,550px));
+    }
+
+    .conteudo .menu {
+        display: none;
+        margin-left: 50%;
+        margin-block-start: 10%;
+    }
+
+    
+    .toggle i {
+        color: #1b1101;
+        font-size: large;
+        padding: 3rem;
+        text-align: center;
+        cursor: pointer;
+
+    }
+
+    .conteudo .menu  {
+        background-color: rgba(180, 179, 179, 0.8);
+    }
+}
